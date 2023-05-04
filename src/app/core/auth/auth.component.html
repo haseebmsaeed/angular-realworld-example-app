@@ -17,6 +17,7 @@
             <fieldset class="form-group">
               <input
                 *ngIf="authType === 'register'"
+                id="username"
                 formControlName="username"
                 placeholder="Username"
                 class="form-control form-control-lg"
@@ -25,6 +26,7 @@
             </fieldset>
             <fieldset class="form-group">
               <input
+                id="email"
                 formControlName="email"
                 placeholder="Email"
                 class="form-control form-control-lg"
@@ -33,6 +35,7 @@
             </fieldset>
             <fieldset class="form-group">
               <input
+                id="password"
                 formControlName="password"
                 placeholder="Password"
                 class="form-control form-control-lg"
@@ -40,6 +43,7 @@
               />
             </fieldset>
             <button
+              id="auth-submit"
               class="btn btn-lg btn-primary pull-xs-right"
               [disabled]="!authForm.valid"
               type="submit"
